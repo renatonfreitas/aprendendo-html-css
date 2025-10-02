@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Aprendendo a usar links</h1>
+    
+    <h2>Usando links externos</h2> <!-- a link that points to another website that is not mine-->
+    <p>Você pode acessar o meu <a href="https://github.com/renatonfreitas" target="_blank" rel="external">repositório público no GitHub</a></p> <!-- a: Anchor | href: Hypertext reference -->
+    <p>Você também pode acessar o meu <a href="https://www.linkedin.com/in/renatonfreitas/" target="_blank" rel="external">LinkedIn</a></p> <!-- Opens in a new tab and is a website that is not mine -->
+
+    <h2>Usando links internos</h2> <!-- a link that points to a website on my server that belongs to me -->
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" target="_self" rel="next">segunda página</a></p> <!-- Opens in the current tab and is the next page on my website -->
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a></p> <!-- Opens in the current tab and is the next page on my website. "noticias/" indicates that the file is in the noticias subfolder -->
+    
+    <h2>Links para download</h2> <!-- a link that downloads a file -->
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="application/pdf">Baixar o livro em PDF</a></li> <!-- downloads the file from the specified path in "href" -->
+        <li><a href="livro/10 - Ligações em toda parte.zip" download="10 - Ligações em toda parte.zip" type="application/zip">Livro compactado em ZIP </a></li> <!-- The download and type attributes give meaning to the "a" tag -->
+    </ul>
+</body>
+</html>
+
+<!-- When there is no link to insert, write "#" to indicate that it is an empty link -->
+<!-- The correct "type" attribute for each file type can be found at: www.iana.org/assignments/media-types/media-types.xhtml -->
